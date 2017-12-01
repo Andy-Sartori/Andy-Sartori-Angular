@@ -1,0 +1,69 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+
+RewriteRule ^(.*) /index.html [NC,L]
+
+RedirectMatch 301 /wp-content/uploads/2017/05/Startup-Grind-Andy.jpg /assets/images/Andy-Sartori-Entrepreneur-Conference.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndyChrisWorkgin.jpg /assets/images/Andy-Sartori-College-Entrepreneur.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndyPresentingOnMealPro-copy.jpg /assets/images/Andy-Sartori-Business-Presentation.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndyOnStage.jpg /assets/images/Andy-Sartori-Entrepreneur-Pitch.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/1500x500.png /assets/images/Andy-Sartori-Entrepreneur-Under-30.png
+RedirectMatch 301 /wp-content/uploads/2017/05/Andy-Sartori-Image.jpeg /assets/images/Andy-Sartori-Social-Entrepreneur.jpeg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndyLogo.jpg /assets/images/Andy-Sartori-Personal-Business-Name-Logo.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriMobileHero-1.jpg /assets/images/Andy-Sartori-Entrepreneur-Under-30.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriMobileHero.jpg /assets/images/Andy-Sartori-Social-Entrepreneur.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndyGuy.jpg /assets/images/Andy-Sartori-Startup-Meeting-Guy-Kawasaki.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndyImage.jpg /assets/images/Andy-Sartori-Tech-Entrepreneur.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriSpeaking.jpg /assets/images/Andy-Sartork-Tech-CEO.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriSFState.png /assets/images/Andy-Sartori-Young-Entreprneur.png
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriPeople-1.jpg /assets/images/Andy-Sartori-Young-Tech-Entrepreneur.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriMealProTeam-1.jpg /assets/images/Andy-Sartori-Business-Owner.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriCoding.jpg /assets/images/Andy-Sartori-Startup-Entrepreneur.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriGuyKawasaki.jpg /assets/images/Business-Meeting-Andy-Sartori.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriYM.jpg /assets/images/Fitness-Entrepreneur-Andy-Sartori.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriMealPRo.jpg /assets/images/Andy-Sartori-Tech-CEO-and-Food-Entreprneur.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriMealProBeginning.jpg /assets/images/Food-Truck-Andy-Sartori-Startup-Owner.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriSentinelMealPro.jpg /assets/images/Andy-Sartori-Entrepreneur-Under-30(1).jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriPaneling.jpg /assets/images/Young-Entrepreneur-Under-30-Andy-Sartori.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriMealProArticle.jpg /assets/images/Young-Tech-Entrepreneur-Andy-Sartori.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriPeople.jpg /assets/images/Andy-Sartori-Entrepreneur-Under-25.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriMealProTeam.jpg /assets/images/Andy-Sartori-Food-Entrepreneur.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriMealProKitchen.jpg /assets/images/Food-Entreprneneur-Andy-Startori.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriDinner.jpg /assets/images/Friendly-Young-Entrepreneur-Andy-Sartori-Tech-CEO-Under-30.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndyPresenting.jpg /assets/images/Andy-Sartori-Startup-Pitching.jpg
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriPanelist.png /assets/images/Andy-Sartori-30-Under-30.png
+RedirectMatch 301 /wp-content/uploads/2017/05/TheMealProKitchen.png /assets/images/Food-Entrepreneur-Andy-Sartori.png
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartoriInterview.png /assets/images/30-Under-30-Andy-Sartori-Self-Made-Entrepreneur-Young.png
+RedirectMatch 301 /wp-content/uploads/2017/05/AndySartori.png /assets/images/Andy-Sartori-Shark-Tank-Young-Entrepreneur.png
+<IfModule mod_expires.c>
+ExpiresActive On
+AddType application/vnd.ms-fontobject .eot 
+AddType application/x-font-ttf .ttf
+AddType application/x-font-opentype .otf
+AddType application/x-font-woff .woff
+AddType image/svg+xml .svg
+ExpiresByType application/vnd.ms-fontobject "access 1 year"
+ExpiresByType application/x-font-ttf "access 1 year"
+ExpiresByType application/x-font-opentype "access 1 year"
+ExpiresByType application/x-font-woff "access 1 year"
+ExpiresByType image/svg+xml "access 1 year"
+ExpiresByType text/html "access 1 hour"
+ExpiresByType text/css "access 14 days"
+ExpiresByType text/x-javascript "access 3 weeks"
+ExpiresByType application/javascript "access 1 month"  
+ExpiresByType application/x-javascript "access 1 month"
+ExpiresByType image/gif "access 2 months"
+ExpiresByType image/png "access 2 months"
+ExpiresByType image/jpg "access 2 months"
+ExpiresByType image/jpeg "access 2 months"
+ExpiresByType image/gif "access 2 months"
+ExpiresByType application/pdf "access 1 year"
+ExpiresByType application/x-shockwave-flash "access 1 year"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 2 days"
+</IfModule>

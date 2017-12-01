@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="andysartori" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Andy Sartori</title>
+  <meta name="description" content="young entrepreneur">
+  <meta name="keywords" content="young entrepreneur">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
+  <link rel="shortcut icon" type="image/x-icon" href="http://2.gravatar.com/avatar/559242b41532f3678ca25f78c4eee7ec?s=26&amp;d=mm&amp;r=g" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+  <link rel="stylesheet" href="bower_components/angular-vidbg/dist/vidBg.min.css">
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ui-view class="view"></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <!-- Angular Components -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="bower_components/angular-material/angular-material.min.js"></script>
+  <script src="bower_components/angular-vidbg/dist/vidBg.min.js"></script>
+  <script src="bower_components/angular-scroll-watch/build/angular-scroll-watch.min.js"></script>
+  <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+  <script src="bower_components/angular-slick-carousel/dist/angular-slick.min.js"></script>
+  <script src="bower_components/instafeed.js/instafeed.js" type="text/javascript"></script>
+  <!-- Custom Components -->
+  <script src="app.module.js"></script>
+  <script src="app.router.js"></script>
+  <script src="src/layout/main.controller.js"></script>
+  <script src="src/home/home.controller.js"></script>
+  <script src="src/famous_entrepreneurs/famous_entrepreneurs.controller.js"></script>
+  <script src="src/motivational_speakers/motivational_speakers.controller.js"></script>
+  <script src="src/social_entrepreneurship/social_entrepreneurship.controller.js"></script>
+  <script src="src/entrepreneurs_articles/entrepreneurs_articles.controller.js"></script>
+  <script src="src/business_speaking/business_speaking.controller.js"></script>
+  <script src="src/entreprneurhship_under_30/entreprneurhship_under_30.controller.js"></script>
+  <script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: '6647186888',
+        accessToken: '6647186888.1677ed0.a6c312d622ae43169c6c0d4ee078d47b',
+        limit: '6',
+        template: '<div class="insta-list"><a href="{{link}}"><img src="{{image}}"/></a></div>'
+    });
+    userFeed.run();
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<nav class="header" layout="row" layout-align="start center" scroll-watch="{from: 0, to: 1}"
+  sw-class="{'fixed': $progress}" sw-broadcast="{
+        $rootScope: true,
+        'default': true
+      }">
+    <div class="wrap" layout="row" layout-align="center center">
+		<a class="logo" flex ui-sref="app.home">ANDY SARTORI</a>
+		<div class="hidden-xs hidden-sm" layout="row">
+			<md-nav-bar
+		        md-selected-nav-item="selectedTab"
+		        md-no-ink-bar="true"
+		        nav-bar-aria-label="navigation links">
+			    <md-nav-item md-nav-sref="app.business-speaking" name="app.business-speaking">
+                                <p>Social Enterpreneur</p>
+			    </md-nav-item>
+			    <md-nav-item md-nav-sref="app.entreprneurhship-under-30" name="app.entreprneurhship-under-30">
+                                <p>Young entrepreneur</p>
+			    </md-nav-item>
+			    <md-nav-item md-nav-sref="app.social-entrepreneurship" name="app.social-entrepreneurship">
+                                <p>Immigrant entrepreneur</p>
+			    </md-nav-item>
+			    <!-- <md-nav-item md-nav-sref="#" name="requests">
+			        Press Kit
+			    </md-nav-item> -->
+			</md-nav-bar>
+                        <a href="mailto:andysartori04@gmail.com?Subject=Website%20Inquiry" class="md-raised md-primary contact-btn md-button md-ink-ripple">Contact</a>
+		</div>
+		<div class="visible-xs visible-sm hidden" layout="row">
+			<md-button class="md-icon-button menu-button" ng-click="slide_show = true">
+				<md-icon md-svg-src="assets/svg/menu.svg"></md-icon>
+			</md-button>
+		</div>
+    </div>
+</nav>
+<div class="slide-menu md-whiteframe-6dp" ng-class="{'expand': slide_show}">
+	<div class="search-row" layout="row" layout-align="start center">
+		<md-input-container md-no-float class="md-block" flex>
+	      <input ng-model="search" type="text" placeholder="Search...">
+	    </md-input-container>
+		<md-button class="md-icon-button close-button" ng-click="slide_show = false">
+			<md-icon md-svg-src="assets/svg/close.svg"></md-icon>
+		</md-button>
+	</div>
+	<div class="menu-list">
+		<ul>
+			<li>
+				<a ui-sref="app.business-speaking">Social Enterpreneur</a>
+			</li>
+			<li>
+				<a ui-sref="app.entreprneurhship-under-30">Young Enterpreneur</a>
+			</li>
+			<li>
+				<a ui-sref="app.social-entrepreneurship">Immigrant entrepreneur</a>
+			</li>
+		</ul>
+	</div>
+	<div class="social-icons">
+		<ul>
+			<li><a href="#" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-tencent-weibo"></i></a></li>
+		</ul>
+	</div>
+</div>
