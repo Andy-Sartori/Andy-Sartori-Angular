@@ -857,5 +857,5 @@ md-card.md-default-theme, md-card {
     width: 1200px;
     margin: 0 auto;
 }
-.insta-list {display: inline-block;margin: 0 6px;}
-.insta-list img {width: auto;}
+.insta-list {display: inline-block;margin: 0 8px;}
+.insta-list img {width: 155px;}
