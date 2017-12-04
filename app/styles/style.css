@@ -407,9 +407,11 @@ a {
 .text-center {text-align: center;}
 .m-y-20 {margin: 20px 0;}
 .md-headline {
-    font-size: 20px;
-    /*font-weight: 300;*/
-    color: #273642;
+  font-size: 18px;
+  font-weight: 300 !important;
+  color: #273642;
+  line-height: 1.5;
+  text-align: left;
 }
 .container{
     max-width: 1200px;
@@ -441,6 +443,7 @@ a {
 .footer-link {
     color: #e1e2e1;
     text-decoration: none;
+    text-transform: none;
 }
 .footer-link:hover {
     color: #00cbff;
@@ -528,7 +531,7 @@ section .text-overlay .description {
     word-break: break-all;
 }
 .young-tech-entrepreneur{
-    background: url('../assets/images/Andy-Sartori-Tech-CEO-and-Food-Entreprneur.jpg');
+    background: url('../assets/images/Andy-Sartori-Tech-CEO-and-Food-Entrepreneur.jpg');
 }
 .self-made-entrerpeneur{
     background: url('../assets/images/Food-Truck-Andy-Sartori-Startup-Owner.jpg');
@@ -584,13 +587,30 @@ section .has-back.right .back-overlay {
 section video
 */
 .content-piece{
-    margin-bottom:0px;
+    margin-bottom:5px;
     font-weight:400;
+    color: #273642;
+    margin-top:10px;
 }
+.content-piece-title {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #273642;
+    margin-top: 10px;
+}
+@media (max-width: 959px) {
+    .content-piece-title {
+        margin-top:20px;
+    }
+}
+
 .content-text{
     padding-right:15px;
     line-height:1.4;
-    font-size:15px;
+    font-size:16px;
+    text-align: left;
+    color: #273642;
 }
 .section-video .display-table {
     display: table;
@@ -733,8 +753,10 @@ section video
 */
 .slider-container {
     padding: 0;
-    width: 1200px;
+    width: 1100px;
     margin: 0 auto;
+    padding-left:10px;
+    paddig-right:10px;
 }
 @media (max-width: 418px) {
     .slider-container {
@@ -859,3 +881,52 @@ md-card.md-default-theme, md-card {
 }
 .insta-list {display: inline-block;margin: 0 8px;}
 .insta-list img {width: 155px;}
+.md-content.md-default-theme, md-content {
+  background-color:#fff !important;
+}
+.nav-item {
+  font-size: 14px;
+}
+md-card {
+  border: 1px solid #eee;
+  border-radius: 1px;
+}
+.sectionHeaderArticles{
+  text-align: center;
+font-size: 1.8rem;
+color: #435363;
+padding-bottom: 2rem;
+}
+.hero-text-page {
+  padding-top:3em;
+  font-size: 3rem;
+  color: #e1e2e1;
+  text-align: center;
+  margin-bottom:0px;
+}
+.hero-subtext-page{
+  color: #e1e2e1;
+  margin-top:10px;
+  font-size: 1.5rem;
+  padding-bottom:4rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+.text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: .2px;
+  max-width: 1160px !important;
+  margin: auto;
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.textHeader{
+  text-align: center;
+  font-size: 1.8rem;
+  color: #273642;
+  padding-bottom: 0rem;
+}

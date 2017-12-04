@@ -10,20 +10,20 @@
 		        md-selected-nav-item="selectedTab"
 		        md-no-ink-bar="true"
 		        nav-bar-aria-label="navigation links">
-			    <md-nav-item md-nav-sref="app.business-speaking" name="app.business-speaking">
-                                <p>Social Enterpreneur</p>
-			    </md-nav-item>
-			    <md-nav-item md-nav-sref="app.entreprneurhship-under-30" name="app.entreprneurhship-under-30">
-                                <p>Young entrepreneur</p>
-			    </md-nav-item>
+          <md-nav-item md-nav-sref="app.young-entrepreneurship" name="app.young-entrepreneurship">
+                                  <p class="nav-item">Young entrepreneur</p>
+          </md-nav-item>
 			    <md-nav-item md-nav-sref="app.social-entrepreneurship" name="app.social-entrepreneurship">
-                                <p>Immigrant entrepreneur</p>
+                                <p class="nav-item">Social Enterpreneur</p>
 			    </md-nav-item>
-			    <!-- <md-nav-item md-nav-sref="#" name="requests">
+			    <md-nav-item md-nav-sref="app.immigrant-entrepreneurship" name="app.immigrant-entrepreneurship">
+                                <p class="nav-item">Immigrant entrepreneur</p>
+			    </md-nav-item>
+          <!--<a href="mailto:andysartori04@gmail.com?Subject=Website%20Inquiry" class="md-raised md-primary contact-btn md-button md-ink-ripple">Contact</a>
+			    <md-nav-item md-nav-sref="#" name="requests">
 			        Press Kit
 			    </md-nav-item> -->
 			</md-nav-bar>
-                        <a href="mailto:andysartori04@gmail.com?Subject=Website%20Inquiry" class="md-raised md-primary contact-btn md-button md-ink-ripple">Contact</a>
 		</div>
 		<div class="visible-xs visible-sm hidden" layout="row">
 			<md-button class="md-icon-button menu-button" ng-click="slide_show = true">
@@ -43,14 +43,14 @@
 	</div>
 	<div class="menu-list">
 		<ul>
+      <li>
+        <a ui-sref="app.young-entrepreneurship">Young Enterpreneur</a>
+      </li>
 			<li>
-				<a ui-sref="app.business-speaking">Social Enterpreneur</a>
+				<a ui-sref="app.social-entrepreneurship">Social Enterpreneur</a>
 			</li>
 			<li>
-				<a ui-sref="app.entreprneurhship-under-30">Young Enterpreneur</a>
-			</li>
-			<li>
-				<a ui-sref="app.social-entrepreneurship">Immigrant entrepreneur</a>
+				<a ui-sref="app.immigrant-entrepreneurship">Immigrant entrepreneur</a>
 			</li>
 		</ul>
 	</div>

@@ -11,7 +11,7 @@
     	$scope.$state = $state;
     	$scope.$state.scrollTo = 'top';
 		$scope.resources = [
-			'assets/video/AndySartoriHero.mp4'
+			'assets/video/AndySartoriHero1.mp4'
 		];
 		$scope.poster = 'http://placehold.it/2000&text=you%20may%20want%20to%20have%20a%20poster';
 		$scope.fullScreen = false;
