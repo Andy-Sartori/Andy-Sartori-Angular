@@ -404,14 +404,16 @@ a {
     text-decoration: none;
     color: #408cca;
 }
+.text-left {text-align: left;}
 .text-center {text-align: center;}
+.text-right {text-align: right;}
 .m-y-20 {margin: 20px 0;}
 .md-headline {
-  font-size: 18px;
-  font-weight: 300 !important;
-  color: #273642;
-  line-height: 1.5;
-  text-align: left;
+    font-size: 18px;
+    font-weight: 300 !important;
+    color: #273642;
+    line-height: 1.5;
+    text-align: left;
 }
 .container{
     max-width: 1200px;
@@ -656,6 +658,12 @@ section video
         margin-top: 4.5em;
     }
 }
+@media screen and (max-width:767px) {
+    .video-title {
+        margin-top: 3.8em;
+        font-size: 3.3em;
+    }
+}
 /*
     Sharing Section
 */
@@ -882,51 +890,79 @@ md-card.md-default-theme, md-card {
 .insta-list {display: inline-block;margin: 0 8px;}
 .insta-list img {width: 155px;}
 .md-content.md-default-theme, md-content {
-  background-color:#fff !important;
+    background-color:#fff !important;
 }
 .nav-item {
-  font-size: 14px;
+    font-size: 14px;
 }
 md-card {
-  border: 1px solid #eee;
-  border-radius: 1px;
+    border: 1px solid #eee;
+    border-radius: 1px;
 }
 .sectionHeaderArticles{
-  text-align: center;
-font-size: 1.8rem;
-color: #435363;
-padding-bottom: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #435363;
+    padding-bottom: 2rem;
 }
 .hero-text-page {
-  padding-top:3em;
-  font-size: 3rem;
-  color: #e1e2e1;
-  text-align: center;
-  margin-bottom:0px;
+    padding-top:3em;
+    font-size: 3rem;
+    color: #e1e2e1;
+    text-align: center;
+    margin-bottom:0px;
 }
 .hero-subtext-page{
-  color: #e1e2e1;
-  margin-top:10px;
-  font-size: 1.5rem;
-  padding-bottom:4rem;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
+    color: #e1e2e1;
+    margin-top:10px;
+    font-size: 1.5rem;
+    padding-bottom:4rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
 }
 .text {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.7;
-  letter-spacing: .2px;
-  max-width: 1160px !important;
-  margin: auto;
-  text-align: justify;
-  padding-left: 10px;
-  padding-right: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: .2px;
+    max-width: 1160px !important;
+    margin: auto;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .textHeader{
-  text-align: center;
-  font-size: 1.8rem;
-  color: #273642;
-  padding-bottom: 0rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #273642;
+    padding-bottom: 0rem;
+}
+/*Home Header bottom section*/
+.home-bottom-section-video {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.home-bottom-section-video > div {
+    width: 1200px;
+    margin: 0 auto;
+}
+.home-bottom-section-video p{
+    font-weight: 600;
+}
+.home-bottom-section-video .section-link img{ 
+    max-width: 190px;
+}
+@media screen and (max-width:767px) {
+    .instafeed #instafeed {
+        width: 100%;
+        text-align: center;
+    }
+    .insta-list {
+        margin: 0 2px;
+    }
 }

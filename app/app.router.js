@@ -48,7 +48,7 @@
                 templateUrl: 'src/immigrant_entrepreneurship/immigrant_entrepreneurship.html',
                 controller: 'ImmigrantEntrepreneurshipCtrl'
             }).state('app.entreprneur-story', {
-                url: '/entrepreneurship-story',
+                url: '/entreprneur-story',
                 templateUrl: 'src/entrepreneurship-story/entrepreneurship-story.html',
                 controller: 'EntrepreneurshipStoryCtrl'
             }).state('app.sports-entrepreneurship', {
